@@ -1,11 +1,10 @@
-# Scratch Crossplane configuration
+# Upbound configuration for Crossplane Composition Functions (XFN) in AWS
 
-This repository defines a "scratch" (or empty) [Crossplane configuration](https://docs.crossplane.io/v1.11/concepts/packages/#configuration-packages). This configuration is a starting point for users in [Upbound](https://console.upbound.io).
+This Configuration ensures that relevant packages are available in the control
+plane so the platform engineer can start building with composition functions
+(XFN) targeting AWS.
 
-## What's Inside
-
-A Crossplane configuration bundles a set of APIs. The [crossplane.yaml](https://github.com/upbound/configuration-scratch/blob/main/crossplane.yaml) is the definition file for a configuration. This configuration has no APIs defined because it is from scratch.
-
-## Next Steps
-
-This repository is a starting point. You can start by creating new API definitions in this repo. Upbound will automatically detect the commits you make in your repo and build the configuration package for you. To learn more about how to build APIs for your managed control planes in Upbound, read the guide on [Upbound's docs](https://docs.upbound.io).
+Specifically, functions can be written with
+[function-go-templating](https://github.com/upbound/function-go-templating/) and
+ IAM resources in the [Upbound Official AWS
+ Provider](https://marketplace.upbound.io/providers/upbound/provider-aws).
